@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Shelf | WHITE-X</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Share Tech Mono', monospace;
+      background: linear-gradient(145deg, #0d1117, #1f2937);
+      color: #c9d1d9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .shelf-container {
+      display: grid;
+      grid-template-columns: repeat(2, 180px);
+      grid-gap: 20px;
+      background: #161b22;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+
+    .shelf-container::before {
+      content: "ALMIRA";
+      position: absolute;
+      top: -30px;
+      left: 10px;
+      color: #58a6ff;
+      font-size: 1.2em;
+    }
+
+    .file {
+      width: 160px;
+      height: 100px;
+      background: #21262d;
+      border: 2px solid #30363d;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #58a6ff;
+      font-size: 1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .file:hover {
+      transform: translateY(-5px) scale(1.05);
+      background: #2d333b;
+      box-shadow: 0 0 10px #58a6ff55;
+    }
+
+    .file::after {
+      content: "PROJECT FILE";
+      position: absolute;
+      bottom: -20px;
+      font-size: 0.7em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="shelf-container">
+    <div class="file" onclick="openProject('https://example.com/project4')">PROJECT 4</div>
+    <div class="file" onclick="openProject('https://example.com/project1')">PROJECT 1</div>
+    <div class="file" onclick="openProject('https://example.com/project5')">PROJECT 5</div>
+    <div class="file" onclick="openProject('https://example.com/project2')">PROJECT 2</div>
+    <div class="file" onclick="openProject('https://example.com/project6')">PROJECT 6</div>
+    <div class="file" onclick="openProject('https://example.com/projectGT2')">PROJECT GT 2</div>
+  </div>
+
+  <script>
+    function openProject(url) {
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>

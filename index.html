@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHITE-X | Portfolio</title>
+    <link rel="icon" type="image/png" href="wx.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        a {
+            color: #cacfd2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+        
+
+        #intro-text {
+            font-size: 2em;
+            color: #58a6ff;
+        }
+
+        h2 {
+            color:  #bb8fce;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        .fa-field {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 8px 0;
+        }
+
+        .fa-field i {
+            color: #58a6ff;
+        }
+
+        .button {
+            background-color: #21262d;
+            color: #58a6ff;
+            border: 1px solid #30363d;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+             margin-top: 20px;
+        }
+
+        
+        
+
+        #top-left-img {
+    		width: 200px;
+    		height: 200px;
+    		border-radius: 100%;
+    		border: 2px solid #30363d;
+    		object-fit: cover;
+    		background-color: #0d1117;
+    		transition: all 0.3s ease;
+		}
+
+        .button:hover {
+            background-color: #30363d;
+        }
+
+        .project {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding-top: 30px;
+            }
+
+            #intro-text {
+                font-size: 1.5em;
+            }
+
+            .project {
+                font-size: 0.9em;
+            }
+        }
+        .os-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+          gap: 20px;
+          margin-top: 20px;
+          text-align: center;
+          font-size: 2em;
+        }
+        
+        .os-grid i {
+          color: #58a6ff;
+          transition: transform 0.2s ease, color 0.3s ease;
+        }
+        
+        .os-grid i:hover {
+          transform: scale(1.2);
+          color: #00ffcc;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="intro-text"></h1>
+            <img src="my.png" alt="WHITE-X Logo" id="top-left-img">
+            <br>
+            <h3 id="c8"></h3>
+            <br>
+            <button class="button" id="fa-button" onclick="openNewPage()">PRESS <i class="fa-solid fa-medal" style="color: #f1c40f;"></i></button>
+        </header>
+
+        <section>
+            <h2><i class="fas fa-user" style="color: #a6acaf;"></i> About Me</h2>
+            <p id="about-text"></p>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-tools" style="color: #a6acaf;"></i> Skills</h2>
+            <br>
+            <div class="fa-field">
+             <i class="fas fa-code" style="color: #e0c97f;"></i> 𝐏𝐲𝐭𝐡𝐨𝐧, 𝐉𝐚𝐯𝐚𝐒𝐜𝐫𝐢𝐩𝐭
+           </div>
+           <br>
+           <div class="fa-field">
+             <i class="fas fa-globe" style="color: #c7a1e3;"></i> 𝐇𝐓𝐌𝐋/𝐂𝐒𝐒, 𝐖𝐨𝐫𝐝𝐏𝐫𝐞𝐬𝐬
+           </div>
+           <br>
+           <div class="fa-field">
+             <i class="fas fa-database" style="color: #a1d4d4;"></i> 𝐌𝐘𝐒𝐐𝐋/𝐒𝐐𝐋𝐈𝐓𝐄𝟑
+           </div>
+           <br>
+           <div class="fa-field">
+             <i class="fas fa-pen-fancy" style="color: #f3aac9;"></i> 𝐆𝐫𝐚𝐩𝐡𝐢𝐜 𝐃𝐞𝐬𝐢𝐠𝐧
+           </div>
+           <br>
+           <div class="fa-field">
+             <i class="fas fa-desktop" style="color: #a6c8ff;"></i> 𝐆𝐢𝐭/𝐆𝐢𝐭𝐇𝐮𝐛
+           </div>
+           <br>
+           <div class="fa-field">
+             <i class="fas fa-terminal" style="color: #c5e1a5;"></i> 𝐋𝐢𝐧𝐮𝐱
+           </div>
+           <br>
+           <div class="fa-field">
+             <i class="fas fa-cube" style="color: #d1b3ff;"></i> 𝐄𝐭𝐡𝐢𝐜𝐚𝐥 𝐇𝐚𝐜𝐤𝐢𝐧𝐠
+           </div>
+           <br>
+           <div class="fa-field">
+             <i class="fas fa-shield" style="color: #b2ebf2;"></i> 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐅𝐨𝐫𝐞𝐧𝐬𝐢𝐜𝐬
+           </div>
+           
+           <br>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-laptop-code" style="color: #7dcea0;"></i> Projects</h2>
+            <div class="project">
+                <h3><i class="fa-solid fa-wallet" style="color: #c9ab8f;"></i><a href="https://github.com/W-H-I-T-E-X/phone_inventory_system.git" target="_blank" style="color:#af7ac5; text-decoration:none;"> Phone Inventory & Billing System</a></h3>
+
+                <p>A full-featured desktop application using Python Tkinter and MySQL for managing mobile store inventory, purchases, sales, accessories, repairs, and billing. Includes an animated GUI, keyboard support, and real-time database operations.</p>
+            </div>
+
+            <div class="project">
+                <h3><i class="fa-solid fa-database" style="color: #294172;"></i><a href="https://d4t4b4c8.github.io/cmp" target="_blank" style="color:#af7ac5; text-decoration:none;"> Chart Dashboard</a></h3>
+                 
+                <p>Monthly sales & purchase analytics using Chart.js, including bar and pie charts for mobile inventory.</p>
+            </div>
+
+            <div class="project">
+                <h3><i class="fa-solid fa-code-fork" style="color: #a80030;"></i><a href="https://envs.net/~whitex" target="_blank" style="color:#af7ac5; text-decoration:none;"> Wx Forensics Website</a></h3>
+				<p>My Steganography CTF page is dedicated to teaching various steganography techniques used in cybersecurity and Capture the Flag (CTF) challenges.</p>
+				<p>It's a practical resource for anyone interested in learning how to detect and use steganography techniques in a competitive or investigative setting.</p>
+            </div>
+
+            <div class="project">
+                 <h3><i class="fa-solid fa-robot" style="color:  #a6acaf;"></i><a href="https://wxf.66ghz.com" target="_blank" style="color:#af7ac5; text-decoration:none;"> Digital Forensics Blogs Website</a></h3>
+            	<p>On this blog, I will provide an overview of digital forensics, including topics such as data recovery, forensic tools, and techniques for analyzing digital evidence.</p>
+            	<p>It serves as a resource for both beginners and professionals in the field, aiming to simplify complex concepts and share the latest trends and best practices in digital forensics.</p>
+            </div>
+
+            
+        </section>
+
+        <section>
+            <h2><i class="fas fa-link" style="color:  #a6acaf;"></i> Links</h2>
+            <div class="fa-field">
+              <i class="fab fa-github" style="color: #a6c8ff;"></i>
+              <a href="https://github.com/W-H-I-T-E-X" style="color: white;">
+                𝐆𝐢𝐭𝐇𝐮𝐛
+              </a>
+            </div>
+            <br>
+            
+            <div class="fa-field">
+              <i class="fab fa-discord" style="color: #c7a1e3;"></i>
+              <span style="color: white;">𝐖𝐇𝐈𝐓𝐄𝐂𝐑𝐎𝐒𝐒#𝟐𝟕𝟗𝟖</span>
+            </div>
+            <br>
+            
+            <div class="fa-field">
+              <i class="fab fa-linkedin" style="color: #b2ebf2;"></i>
+              <a href="https://www.linkedin.com/in/mohd-faizan-764931220/" style="color: white;">
+                𝐋𝐢𝐧𝐤𝐞𝐝𝐈𝐧
+              </a>
+            </div>
+            <br>
+            
+            <div class="fa-field">
+              <i class="fab fa-youtube" style="color: #f3aac9;"></i>
+              <a href="https://www.youtube.com/channel/UClGJUzEjiYZwiRlCl7nY7ow" style="color: white;">
+                𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+              </a>
+            </div>
+            <br>
+            
+            <div class="fa-field">
+              <i class="fab fa-google" style="color: #a1d4d4;"></i>
+              <span style="color: white;">𝐦𝐟𝐬𝐢𝐝𝐝𝐢𝐪𝐮𝐢𝟕𝟏𝟔@𝐠𝐦𝐚𝐢𝐥.𝐜𝐨𝐦</span>
+            </div>
+            <br>
+            
+                    </section>
+        <section>
+          <h2><i class="fab fa-linux" style="color: #ecf0f1;"></i> OS THAT I USED</h2>
+          <p style="margin-top: 10px; color: #999;">
+            I’ve worked with a variety of Linux distributions and Windows systems. Each taught me something different.
+          </p>
+          <div class="os-grid">
+            <i class="mdi mdi-manjaro" title="Manjaro Linux" style="color: #35bf5c;"></i>
+            <i class="mdi mdi-arch" title="Arch Linux" style="color: #1793d1;"></i>
+            <i class="mdi mdi-ubuntu" title="Ubuntu" style="color: #e95420;"></i>
+            <i class="mdi mdi-debian" title="Debian" style="color: #a80030;"></i>
+            <i class="mdi mdi-fedora" title="Fedora" style="color: #294172;"></i>
+            <i class="mdi mdi-gentoo" title="Gentoo" style="color: #54487a;"></i>
+            <i class="mdi mdi-linux-mint" title="Linux Mint" style="color: #87cf3e;"></i>
+            <i class="mdi mdi-microsoft-windows" title="Windows" style="color: #00adef;"></i>
+            <i class="mdi mdi-redhat" title="Red Hat Linux" style="color: #cc0000;"></i>
+          </div>
+          
+        </section>
+        
+    </div>
+
+    <script>
+        const introText = "Welcome to My Portfolio";
+		const aboutText = "I'm Mohammed Faizan, a 24-year-old graduate from Jamia Hamdard University. I have a strong interest in web development, cybersecurity, digital forensics, graphic design, and database management. I'm passionate about exploring innovative solutions and improving my skills. Looking for opportunities where I can contribute and grow.";
+		const c = "MY CERTIFICATES";
+		const introTarget = document.getElementById("intro-text");
+		const aboutTarget = document.getElementById("about-text");
+		const cTarget = document.getElementById("c8");
+		const btn = document.getElementById("fa-button");
+
+		
+		const profilePic = document.getElementById("top-left-img");
+		const originalSrc = "my.png";
+		const hoverSrc = "w.png";
+
+		
+
+		profilePic.addEventListener("mouseenter", () => {
+    		profilePic.src = hoverSrc;
+		});
+
+		profilePic.addEventListener("mouseleave", () => {
+    		profilePic.src = originalSrc;
+		});
+
+		let i = 0, j = 0, k = 0;
+		const speed = 50;
+
+		function typeIntro() {
+    		if (i < introText.length) {
+        		introTarget.innerHTML += introText.charAt(i);
+        		i++;
+        		setTimeout(typeIntro, speed);
+    		} else {
+        		setTimeout(typeAbout, 400);
+    		}
+		}
+
+		function typeAbout() {
+    		if (j < aboutText.length) {
+        		aboutTarget.innerHTML += aboutText.charAt(j);
+        		j++;
+        		setTimeout(typeAbout, speed);
+    		} else {
+        		setTimeout(typeCert, 400);
+    		}
+		}
+
+		function typeCert() {
+    		if (k < c.length) {
+        		cTarget.innerHTML += c.charAt(k);
+        		k++;
+        		setTimeout(typeCert, speed);
+    		} else {
+        		btn.style.display = "inline-block";
+    		}
+		}
+
+		window.onload = () => {
+    		btn.style.display = "none";
+    		typeIntro();
+		};
+
+		function openNewPage() {
+    		btn.innerText = "Opening...";
+    		btn.disabled = true;
+    		setTimeout(() => {
+        		window.location.href = "ct2.html";
+    		}, 500);
+		}
+    </script>
+</body>
+</html>
